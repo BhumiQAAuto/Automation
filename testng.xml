@@ -1,0 +1,29 @@
+<suite name="Test">
+	
+	<listeners>
+		<listener class-name="utilities.ExtentReporterNG" />
+	</listeners>
+	
+	<test thread-count="5" name="ChromeTest">
+	 <parameter name="browser" value="chrome"></parameter>
+	 <classes>
+	 <class name="TestLayer.LoginTest"></class>
+	  </classes>
+	</test>
+	
+	<test thread-count="5" name="FirefoxTest">
+	 <parameter name="browser" value="firefox"></parameter>
+	 <classes>
+	 <class name="TestLayer.LoginTest"></class>
+	  </classes>
+	</test>
+	
+	<test thread-count="5" name="EdgeTest">
+	 <parameter name="browser" value="edge"></parameter>
+	 <classes>
+	 <class name="TestLayer.LoginTest"></class>
+	  </classes>
+	</test>
+	
+	
+</suite> <!-- Suite -->
